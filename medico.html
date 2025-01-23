@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Médico</title>
+    <link rel="stylesheet" href="css/medico.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Bienvenido, Dr. Juan Pérez</h1>
+            <p>Cédula Profesional: 123456789</p>
+            <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+        </header>
+
+        <!-- Opciones principales -->
+        <section class="modules">
+            <a href="consulta-nueva.html" class="module">
+                <h2>Nueva Consulta</h2>
+                <p>Inicia una nueva consulta con un alumno.</p>
+            </a>
+            <a href="medicamentos.html" class="module">
+                <h2>Medicamentos</h2>
+                <p>Consulta el inventario de medicamentos.</p>
+            </a>
+            <a href="historial.html" class="module">
+                <h2>Historial Clínico</h2>
+                <p>Revisa el historial de consultas de los alumnos.</p>
+            </a>
+        </section>
+    </div>
+    <script src="js/medico.js"></script>
+</body>
+</html>

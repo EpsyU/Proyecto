@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial Clínico</title>
+  <link rel="stylesheet" href="css/histo_clinico.css">
+</head>
+<body>
+  <div class="historial-container">
+    <h1>Historial Clínico del Estudiante</h1>
+    <form id="historial-clinico-form">
+      <!-- Datos generales -->
+      <fieldset>
+        <legend>Datos Generales</legend>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" required>
+        </div>
+        <div class="form-group">
+          <label>Sexo:</label>
+          <label><input type="radio" name="sexo" value="F" required> Femenino</label>
+          <label><input type="radio" name="sexo" value="M" required> Masculino</label>
+        </div>
+        <div class="form-group">
+          <label for="domicilio">Domicilio:</label>
+          <input type="text" id="domicilio" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" required>
+        </div>
+      </fieldset>
+
+      <!-- Antecedentes familiares -->
+      <fieldset>
+        <legend>Antecedentes Hereditarios Familiares</legend>
+        <p>Marca con una "X" las enfermedades conocidas en tu familia:</p>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="antecedentes" value="diabetes"> Diabetes</label>
+          <label><input type="checkbox" name="antecedentes" value="hipertension"> Hipertensión</label>
+          <label><input type="checkbox" name="antecedentes" value="cancer"> Cáncer</label>
+          <label><input type="checkbox" name="antecedentes" value="epilepsia"> Epilepsia</label>
+          <label><input type="checkbox" name="antecedentes" value="infarto"> Infarto Cardíaco</label>
+          <!-- Agrega más opciones aquí según la lista -->
+        </div>
+      </fieldset>
+
+      <!-- Hábitos personales -->
+      <fieldset>
+        <legend>Hábitos Personales</legend>
+        <div class="form-group">
+          <label>¿Fuma?</label>
+          <label><input type="radio" name="fuma" value="si" required> Sí</label>
+          <label><input type="radio" name="fuma" value="no" required> No</label>
+        </div>
+        <div class="form-group">
+          <label>¿Consume alcohol?</label>
+          <label><input type="radio" name="alcohol" value="si" required> Sí</label>
+          <label><input type="radio" name="alcohol" value="no" required> No</label>
+        </div>
+        <!-- Agrega más preguntas aquí -->
+      </fieldset>
+
+      <!-- Antecedentes personales -->
+      <fieldset>
+        <legend>Antecedentes Personales Patológicos</legend>
+        <div class="form-group">
+          <label>¿Qué enfermedades ha padecido?</label>
+          <textarea id="enfermedades-padecidas"></textarea>
+        </div>
+        <div class="form-group">
+          <label>¿Ha sido operado?</label>
+          <label><input type="radio" name="operado" value="si" required> Sí</label>
+          <label><input type="radio" name="operado" value="no" required> No</label>
+        </div>
+      </fieldset>
+
+      <!-- Botón de envío -->
+      <button type="submit">Guardar Historial</button>
+    </form>
+  </div>
+  <script src="js/histo_estudiante.js"></script>
+</body>
+</html>

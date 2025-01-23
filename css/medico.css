@@ -1,0 +1,80 @@
+/* Contenedor general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #0066cc;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+/* Módulos principales */
+.modules {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.module {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.module h2 {
+    font-size: 1.5rem;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.module p {
+    font-size: 1rem;
+    color: #666;
+}
